@@ -1,0 +1,5 @@
+
+testDeleteProductByIdProductNotFoundException=true
+testGetProductByIdProductNotFoundException=true
+testSaveProductInvalidDataException=true
+testUpdateProductInvalidDataException=true
