@@ -26,6 +26,7 @@ import com.iiht.training.auction.controller.SellerController;
 import com.iiht.training.auction.dto.CustomerDto;
 import com.iiht.training.auction.exceptions.CustomerNotFoundException;
 import com.iiht.training.auction.model.exception.ExceptionResponse;
+import com.iiht.training.auction.service.BidsService;
 import com.iiht.training.auction.service.CustomerService;
 import com.iiht.training.auction.testutils.MasterData;
 
@@ -37,6 +38,8 @@ public class CustomerExceptionTest {
 
 	@MockBean
 	private CustomerService  customerService;
+	@MockBean
+	private BidsService  bidsService;
 
 	@AfterAll
 	public static void afterAll() {

@@ -25,6 +25,7 @@ import com.iiht.training.auction.controller.SellerController;
 import com.iiht.training.auction.dto.SellerDto;
 import com.iiht.training.auction.exceptions.SellerNotFoundException;
 import com.iiht.training.auction.model.exception.ExceptionResponse;
+import com.iiht.training.auction.service.BidsService;
 import com.iiht.training.auction.service.SellerService;
 import com.iiht.training.auction.testutils.MasterData;
 
@@ -36,6 +37,9 @@ public class SellerExceptionTest {
 
 	@MockBean
 	private SellerService sellerService;
+	
+	@MockBean
+	private BidsService bidsService;
 
 	@AfterAll
 	public static void afterAll() {

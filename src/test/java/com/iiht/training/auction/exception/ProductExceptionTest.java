@@ -25,6 +25,7 @@ import com.iiht.training.auction.controller.ProductController;
 import com.iiht.training.auction.dto.ProductDto;
 import com.iiht.training.auction.exceptions.ProductNotFoundException;
 import com.iiht.training.auction.model.exception.ExceptionResponse;
+import com.iiht.training.auction.service.BidsService;
 import com.iiht.training.auction.service.ProductService;
 import com.iiht.training.auction.testutils.MasterData;
 
@@ -36,6 +37,8 @@ public class ProductExceptionTest {
 
 	@MockBean
 	private ProductService  productService;
+	@MockBean
+	private BidsService  bidsService;
 
 	@AfterAll
 	public static void afterAll() {
